@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <macros>
+    <P>MCT:VBM:</P>
+    <Q>CS_Y:</Q>
+  </macros>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>800</width>
+    <height>50</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>MCT VBM</text>
+    <width>800</width>
+    <height>50</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>US_IB</M>
+          <P>MCT:VBM:</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>US IB Motor</text>
+    <x>50</x>
+    <y>100</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>US_OB</M>
+          <P>MCT:VBM:</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>US IB Motor</text>
+    <x>50</x>
+    <y>150</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>DS</M>
+          <P>MCT:VBM:</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>DS Motor</text>
+    <x>50</x>
+    <y>200</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <M>US_IB</M>
+      <P>MCT:VBM:</P>
+    </macros>
+    <file>../opi-common/motor/motorx_tiny.bob</file>
+    <x>120</x>
+    <y>460</y>
+    <width>130</width>
+    <height>110</height>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>../../../Dropbox/Screenshots/Screen Shot 2022-04-11 at 16.06.44.png</file>
+    <x>80</x>
+    <y>320</y>
+    <width>500</width>
+    <height>140</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <M>US_OB</M>
+      <P>MCT:VBM:</P>
+    </macros>
+    <file>../opi-common/motor/motorx_tiny.bob</file>
+    <x>120</x>
+    <y>270</y>
+    <width>130</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <M>DS</M>
+      <P>MCT:VBM:</P>
+    </macros>
+    <file>../opi-common/motor/motorx_tiny.bob</file>
+    <x>560</x>
+    <y>370</y>
+    <width>130</width>
+    <height>110</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/calc/Transform_full.bob</file>
+        <macros>
+          <P>MCT:VBM:CS_Y:</P>
+          <T>t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Transform - t1</text>
+    <x>240</x>
+    <y>100</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/calc/Transform_full.bob</file>
+        <macros>
+          <P>MCT:VBM:CS_Y:</P>
+          <T>t2</T>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Transform - t2</text>
+    <x>240</x>
+    <y>150</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Vertical</text>
+    <x>410</x>
+    <y>100</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(Q)linr</pv_name>
+    <x>460</x>
+    <y>100</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P)$(Q)pitch</pv_name>
+    <x>460</x>
+    <y>130</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Pitch</text>
+    <x>410</x>
+    <y>130</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>$(P)$(Q)roll</pv_name>
+    <x>460</x>
+    <y>160</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Roll</text>
+    <x>410</x>
+    <y>160</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_6</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(Q)sync.PROC</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <text>Sync</text>
+    <x>460</x>
+    <y>190</y>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(Q)t2.D</pv_name>
+    <x>580</x>
+    <y>100</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(Q)t2.E</pv_name>
+    <x>580</x>
+    <y>130</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(Q)t2.F</pv_name>
+    <x>580</x>
+    <y>160</y>
+  </widget>
+</display>
