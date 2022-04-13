@@ -231,4 +231,103 @@
     <x>580</x>
     <y>160</y>
   </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(Q)linr_busy</pv_name>
+    <x>700</x>
+    <y>100</y>
+    <width>60</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P)$(Q)pitch_busy</pv_name>
+    <x>700</x>
+    <y>130</y>
+    <width>60</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P)$(Q)roll_busy</pv_name>
+    <x>700</x>
+    <y>160</y>
+    <width>60</width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_7</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(Q)linr_busy</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <text>Done</text>
+    <x>770</x>
+    <y>100</y>
+    <width>50</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(P)$(Q)cs_busy_reset_.A</pv_name>
+    <x>710</x>
+    <y>300</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>$(P)$(Q)cs_busy_reset_.B</pv_name>
+    <x>710</x>
+    <y>330</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(P)$(Q)cs_busy_reset_.C</pv_name>
+    <x>710</x>
+    <y>360</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(P)$(Q)cs_busy_reset_.VAL</pv_name>
+    <x>710</x>
+    <y>390</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_10</name>
+    <pv_name>$(P)$(Q)cs_busy_reset_.OVAL</pv_name>
+    <x>710</x>
+    <y>420</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_8</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(Q)pitch_busy</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <text>Done</text>
+    <x>770</x>
+    <y>130</y>
+    <width>50</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_9</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(Q)roll_busy</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <text>Done</text>
+    <x>770</x>
+    <y>160</y>
+    <width>50</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
