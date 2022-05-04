@@ -5,16 +5,17 @@
     <P>MCT:VBM:</P>
     <Q>CS_Y:</Q>
   </macros>
-  <width>1000</width>
+  <width>1280</width>
+  <height>570</height>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>
-    <width>1000</width>
+    <width>1280</width>
     <height>50</height>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>MCT VBM</text>
-    <width>1000</width>
+    <width>1280</width>
     <height>50</height>
     <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -81,7 +82,6 @@
     <name>Embedded Display</name>
     <macros>
       <M>US_IB</M>
-      <P>MCT:VBM:</P>
     </macros>
     <file>../opi-common/motor/motorx_tiny.bob</file>
     <x>120</x>
@@ -101,7 +101,6 @@
     <name>Embedded Display_2</name>
     <macros>
       <M>US_OB</M>
-      <P>MCT:VBM:</P>
     </macros>
     <file>../opi-common/motor/motorx_tiny.bob</file>
     <x>120</x>
@@ -113,7 +112,6 @@
     <name>Embedded Display_3</name>
     <macros>
       <M>DS</M>
-      <P>MCT:VBM:</P>
     </macros>
     <file>../opi-common/motor/motorx_tiny.bob</file>
     <x>560</x>
@@ -306,5 +304,108 @@
     <x>130</x>
     <y>150</y>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <M>US_OB</M>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>830</x>
+    <y>90</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <M>US_IB</M>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>960</x>
+    <y>90</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <macros>
+      <M>DS</M>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>1090</x>
+    <y>90</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <macros>
+      <M>linr_motor</M>
+      <P>MCT:VBM:CS_Y:</P>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>830</x>
+    <y>310</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <macros>
+      <M>pitch_motor</M>
+      <P>MCT:VBM:CS_Y:</P>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>960</x>
+    <y>310</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_9</name>
+    <macros>
+      <M>roll_motor</M>
+      <P>MCT:VBM:CS_Y:</P>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>1090</x>
+    <y>310</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Speed</text>
+    <x>410</x>
+    <y>240</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_3</name>
+    <pv_name>$(P)$(Q)speed</pv_name>
+    <x>460</x>
+    <y>240</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(Q)speed_alarm</pv_name>
+    <x>580</x>
+    <y>240</y>
+    <off_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </on_color>
   </widget>
 </display>
