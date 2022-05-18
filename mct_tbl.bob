@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <macros>
+    <CS>$(P)$(Q)</CS>
+    <P>MCT:TBL1:</P>
+    <Q>CS_Y:</Q>
+  </macros>
+  <width>1280</width>
+  <height>570</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>1280</width>
+    <height>50</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>MCT TBL</text>
+    <width>1280</width>
+    <height>50</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>US</M>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>US Motor</text>
+    <x>20</x>
+    <y>100</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>DS</M>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>DS Motor</text>
+    <x>20</x>
+    <y>150</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <M>US</M>
+    </macros>
+    <file>../opi-common/motor/motorx_tiny.bob</file>
+    <x>120</x>
+    <y>270</y>
+    <width>130</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <M>DS</M>
+    </macros>
+    <file>../opi-common/motor/motorx_tiny.bob</file>
+    <x>430</x>
+    <y>270</y>
+    <width>130</width>
+    <height>110</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/calc/Transform_full.bob</file>
+        <macros>
+          <P>$(CS)</P>
+          <T>t1</T>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Transform - t1</text>
+    <x>240</x>
+    <y>100</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/calc/Transform_full.bob</file>
+        <macros>
+          <P>$(CS)</P>
+          <T>t2</T>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Transform - t2</text>
+    <x>240</x>
+    <y>150</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Vertical</text>
+    <x>410</x>
+    <y>100</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(Q)linr</pv_name>
+    <x>460</x>
+    <y>100</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P)$(Q)pitch</pv_name>
+    <x>460</x>
+    <y>130</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Pitch</text>
+    <x>410</x>
+    <y>130</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_6</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(Q)sync.PROC</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <text>Sync</text>
+    <x>460</x>
+    <y>190</y>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(Q)t2.D</pv_name>
+    <x>580</x>
+    <y>100</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(Q)t2.E</pv_name>
+    <x>580</x>
+    <y>130</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(Q)linr_busy</pv_name>
+    <x>700</x>
+    <y>100</y>
+    <width>60</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P)$(Q)pitch_busy</pv_name>
+    <x>700</x>
+    <y>130</y>
+    <width>60</width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>linr_motor</M>
+          <P>$(CS)</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Y Motor</text>
+    <x>130</x>
+    <y>100</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_9</name>
+    <actions>
+      <action type="open_display">
+        <file>../opi-common/motor/motorx.bob</file>
+        <macros>
+          <M>pitch_motor</M>
+          <P>$(CS)</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Pitch Motor</text>
+    <x>130</x>
+    <y>150</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <M>US</M>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>830</x>
+    <y>90</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <macros>
+      <M>DS</M>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>1090</x>
+    <y>90</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <macros>
+      <M>linr_motor</M>
+      <P>$(CS)</P>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>830</x>
+    <y>310</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <macros>
+      <M>pitch_motor</M>
+      <P>$(CS)</P>
+    </macros>
+    <file>../opi-common/motor/motorx.bob</file>
+    <x>960</x>
+    <y>310</y>
+    <width>116</width>
+    <height>200</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Speed</text>
+    <x>410</x>
+    <y>240</y>
+    <width>50</width>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_3</name>
+    <pv_name>$(P)$(Q)speed</pv_name>
+    <x>460</x>
+    <y>240</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(Q)speed_alarm</pv_name>
+    <x>580</x>
+    <y>240</y>
+    <off_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </on_color>
+  </widget>
+</display>
